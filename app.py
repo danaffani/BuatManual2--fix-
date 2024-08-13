@@ -1,5 +1,6 @@
 import time
-from flask import Flask, render_template_string, request, redirect, jsonify, send_from_directory
+from flask import Flask, render_template_string, request, redirect, jsonify, send_from_directory, url_for
+from flask_login import LoginManager, UserMixin, login_user, logout_user, login_required, current_user
 import webview
 import csv
 import json
@@ -18,6 +19,19 @@ def signal_handler(signal, frame):
 signal.signal(signal.SIGINT, signal_handler)
 
 app = Flask(__name__)
+app.secret_key = 'your_secret_key'
+
+login_manager = LoginManager()
+login_manager.init_app(app)
+login_manager.login_view = 'login'
+
+class User(UserMixin):
+    def __init__(self, id):
+        self.id = id
+
+@login_manager.user_loader
+def load_user(user_id):
+    return User(user_id)
 
 file_path = 'database/item.csv'
 person_file_path = 'database/person.csv'
@@ -118,6 +132,7 @@ def run_flask():
     app.run(debug=True, use_reloader=False)
 
 @app.route('/')
+@login_required
 def home():
     return render_template_string(r'''
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -144,6 +159,19 @@ def home():
         </nav>
           <div class="container mt-5">
             <h1 class="text-center mt-4">Welcome to the Market App</h1>
+            <a href="/logout">Logout</a>
+            <script>
+                let timeout;
+                function resetTimer() {
+                    clearTimeout(timeout);
+                    timeout = setTimeout(function() {
+                        window.location.href = '/welcome';
+                    }, 5000);
+                }
+                document.onload = resetTimer;
+                document.onmousemove = resetTimer;
+                document.onkeypress = resetTimer;
+            </script>
         </div>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
@@ -154,6 +182,78 @@ def home():
             });
         </script>
     ''')
+
+@app.route('/welcome', methods=['GET', 'POST'])
+def welcome():
+    if request.method == 'POST':
+        username = request.form['username']
+        password = request.form['password']
+        if username == 'Admin@MarketApp' and password == 'Ap55nxca':
+            login_user(User(1))
+            return redirect(url_for('home'))
+        else:
+            return '<h1>Invalid username or password</h1>'
+    return render_template_string(r'''
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="/">Market App</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/stock">Stock</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/person">Person</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/sales">Sale</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="btn btn-danger btn-sm delete-button" href="/exit" onclick="return confirm('Are you sure you want to exit?');">Exit</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container mt-5">
+            <h1 class="text-center">Welcome Page</h1>
+            <form method="post">
+                Username: <input type="text" name="username"><br>
+                Password: <input type="password" name="password"><br>
+                <input type="submit" value="Login">
+            </form>
+            <script>
+                let logoutTimer;
+                function startLogoutTimer() {
+                    let counter = 10;
+                    const interval = setInterval(function() {
+                        document.getElementById('timer').innerText = 'Logging out in ' + counter + ' seconds';
+                        counter--;
+                        if (counter < 0) {
+                            clearInterval(interval);
+                            window.location.href = '/logout';
+                        }
+                    }, 1000);
+                }
+                document.onload = startLogoutTimer;
+            </script>
+            <div id="timer"></div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script>
+            window.addEventListener('beforeunload', function (event) {
+                navigator.sendBeacon('/shutdown');
+            });
+        </script>
+    ''')
+
+@app.route('/logout')
+def logout():
+    logout_user()
+    return redirect(url_for('welcome'))
 
 @app.route('/stock', methods=['GET', 'POST'])
 def stock():
