@@ -21,18 +21,9 @@ signal.signal(signal.SIGINT, signal_handler)
 app = Flask(__name__)
 app.secret_key = 'your_secret_key'
 
-login_manager = LoginManager()
-login_manager.init_app(app)
-login_manager.login_view = 'login'
-
 class User(UserMixin):
     def __init__(self, id):
         self.id = id
-
-@login_manager.user_loader
-def load_user(user_id):
-    return User(user_id)
-
 file_path = 'database/item.csv'
 person_file_path = 'database/person.csv'
 sales_file_path = 'database/sales.csv'
@@ -132,7 +123,6 @@ def run_flask():
     app.run(debug=True, use_reloader=False)
 
 @app.route('/')
-@login_required
 def home():
     return render_template_string(r'''
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -140,7 +130,6 @@ def home():
             <a class="navbar-brand" href="/">Market App</a>
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav mr-auto">
-                    {% if current_user.is_authenticated %}
                     <li class="nav-item">
                         <a class="nav-link" href="/stock">Stock</a>
                     </li>
@@ -150,7 +139,6 @@ def home():
                     <li class="nav-item">
                         <a class="nav-link" href="/sales">Sale</a>
                     </li>
-                    {% endif %}
                 </ul>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
@@ -162,19 +150,6 @@ def home():
         <div class="container mt-5">
             <h1 class="text-center mt-4">Welcome to the Market App</h1>
             <a href="/logout">Logout</a>
-            <script>
-                let timeout;
-                function resetTimer() {
-                    clearTimeout(timeout);
-                    timeout = setTimeout(function() {
-                        alert('Anda telah ter-logout.');
-                        window.location.href = '/logout';
-                    }, 5000);  // Set to 5 seconds for demonstration, adjust as needed
-                }
-                window.onload = resetTimer;
-                document.onmousemove = resetTimer;
-                document.onkeypress = resetTimer;
-            </script>
         </div>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
@@ -187,23 +162,13 @@ def home():
     ''')
 
 @app.route('/welcome', methods=['GET', 'POST'])
-@login_required
 def welcome():
-    if request.method == 'POST':
-        username = request.form['username']
-        password = request.form['password']
-        if username == 'Admin@MarketApp' and password == 'Ap55nxca':
-            login_user(User(1))
-            return redirect(url_for('home'))
-        else:
-            return '<h1>Invalid username or password</h1>'
     return render_template_string(r'''
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="/">Market App</a>
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav mr-auto">
-                    {% if current_user.is_authenticated %}
                     <li class="nav-item">
                         <a class="nav-link" href="/stock">Stock</a>
                     </li>
@@ -213,7 +178,6 @@ def welcome():
                     <li class="nav-item">
                         <a class="nav-link" href="/sales">Sale</a>
                     </li>
-                    {% endif %}
                 </ul>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
@@ -224,27 +188,6 @@ def welcome():
         </nav>
         <div class="container mt-5">
             <h1 class="text-center">Welcome to Market App</h1>
-            <form method="post">
-                Username: <input type="text" name="username"><br>
-                Password: <input type="password" name="password"><br>
-                <input type="submit" value="Login">
-            </form>
-            <script>
-                let logoutTimer;
-                function startLogoutTimer() {
-                    let counter = 10;
-                    const interval = setInterval(function() {
-                        document.getElementById('timer').innerText = 'Logging out in ' + counter + ' seconds';
-                        counter--;
-                        if (counter < 0) {
-                            clearInterval(interval);
-                            window.location.href = '/logout';
-                        }
-                    }, 1000);
-                }
-                document.onload = startLogoutTimer;
-            </script>
-            <div id="timer"></div>
         </div>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
@@ -256,32 +199,7 @@ def welcome():
         </script>
     ''')
 
-@app.route('/login', methods=['GET', 'POST'])
-def login():
-    if request.method == 'POST':
-        username = request.form['username']
-        password = request.form['password']
-        if username == 'Admin@MarketApp' and password == 'Ap55nxca':
-            user = User(1)  # Pastikan ini sesuai dengan implementasi User Anda
-            login_user(user)
-            return redirect(url_for('home'))
-        else:
-            return 'Invalid username or password'
-    return render_template_string('''
-        <form method="post">
-            Username: <input type="text" name="username"><br>
-            Password: <input type="password" name="password"><br>
-            <input type="submit" value="Login">
-        </form>
-    ''')
-
-@app.route('/logout')
-def logout():
-    logout_user()
-    return redirect(url_for('welcome'))
-
 @app.route('/stock', methods=['GET', 'POST'])
-@login_required
 def stock():
     if request.method == 'POST':
         if request.form.get('action') == 'delete':
@@ -297,7 +215,6 @@ def stock():
             <a class="navbar-brand" href="/">Market App</a>
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav mr-auto">
-                    {% if current_user.is_authenticated %}
                     <li class="nav-item">
                         <a class="nav-link" href="/stock">Stock</a>
                     </li>
@@ -307,7 +224,6 @@ def stock():
                     <li class="nav-item">
                         <a class="nav-link" href="/sales">Sale</a>
                     </li>
-                    {% endif %}
                 </ul>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
@@ -359,19 +275,7 @@ def stock():
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script>
-        
-            let timeout;
-            function resetTimer() {
-                clearTimeout(timeout);
-                timeout = setTimeout(function() {
-                    window.location.href = '/';
-                }, 5000);
-            }
-            document.onload = resetTimer;
-            document.onmousemove = resetTimer;
-            document.onkeypress = resetTimer;
-            
+        <script>        
             function formatCurrency(value) {
                 let number = Math.floor(parseFloat(value));
                 return 'Rp. ' + number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
@@ -422,7 +326,6 @@ def open_stock_folder():
     return redirect('/stock')
 
 @app.route('/edit', methods=['GET', 'POST'])
-@login_required
 def edit():
     data = read_csv(file_path)
     if request.method == 'POST':
@@ -454,7 +357,6 @@ def edit():
             <a class="navbar-brand" href="/">Market App</a>
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav mr-auto">
-                    {% if current_user.is_authenticated %}
                     <li class="nav-item">
                         <a class="nav-link" href="/stock">Stock</a>
                     </li>
@@ -464,7 +366,6 @@ def edit():
                     <li class="nav-item">
                         <a class="nav-link" href="/sales">Sale</a>
                     </li>
-                    {% endif %}
                 </ul>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
@@ -496,19 +397,7 @@ def edit():
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script>
-
-            let timeout;
-            function resetTimer() {
-                clearTimeout(timeout);
-                timeout = setTimeout(function() {
-                    window.location.href = '/';
-                }, 5000);
-            }
-            document.onload = resetTimer;
-            document.onmousemove = resetTimer;
-            document.onkeypress = resetTimer;
-            
+        <script>            
             window.addEventListener('beforeunload', function (event) {
                 navigator.sendBeacon('/shutdown');
             });
@@ -516,7 +405,6 @@ def edit():
     ''', item=item)
 
 @app.route('/person', methods=['GET', 'POST'])
-@login_required
 def person():
     data = read_person_csv(person_file_path)
     if request.method == 'POST':
@@ -531,7 +419,6 @@ def person():
             <a class="navbar-brand" href="/">Market App</a>
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav mr-auto">
-                    {% if current_user.is_authenticated %}
                     <li class="nav-item">
                         <a class="nav-link" href="/stock">Stock</a>
                     </li>
@@ -541,7 +428,6 @@ def person():
                     <li class="nav-item">
                         <a class="nav-link" href="/sales">Sale</a>
                     </li>
-                    {% endif %}
                 </ul>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
@@ -595,18 +481,6 @@ def person():
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script>
-        
-            let timeout;
-            function resetTimer() {
-                clearTimeout(timeout);
-                timeout = setTimeout(function() {
-                    window.location.href = '/';
-                }, 5000);
-            }
-            document.onload = resetTimer;
-            document.onmousemove = resetTimer;
-            document.onkeypress = resetTimer;
-        
             function searchPersonTable() {
                 let input = document.getElementById('person-search-box').value.toLowerCase();
                 let rows = document.querySelectorAll('#person-table-body tr');
@@ -683,7 +557,6 @@ def edit_person():
             <a class="navbar-brand" href="/">Market App</a>
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav mr-auto">
-                    {% if current_user.is_authenticated %}
                     <li class="nav-item">
                         <a class="nav-link" href="/stock">Stock</a>
                     </li>
@@ -693,7 +566,6 @@ def edit_person():
                     <li class="nav-item">
                         <a class="nav-link" href="/sales">Sale</a>
                     </li>
-                    {% endif %}
                 </ul>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
@@ -718,18 +590,6 @@ def edit_person():
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script>
-        
-            let timeout;
-            function resetTimer() {
-                clearTimeout(timeout);
-                timeout = setTimeout(function() {
-                    window.location.href = '/';
-                }, 5000);
-            }
-            document.onload = resetTimer;
-            document.onmousemove = resetTimer;
-            document.onkeypress = resetTimer;
-        
             window.addEventListener('beforeunload', function (event) {
                 navigator.sendBeacon('/shutdown');
             });
@@ -760,7 +620,6 @@ def details():
             <a class="navbar-brand" href="/">Market App</a>
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav mr-auto">
-                    {% if current_user.is_authenticated %}
                     <li class="nav-item">
                         <a class="nav-link" href="/stock">Stock</a>
                     </li>
@@ -770,7 +629,6 @@ def details():
                     <li class="nav-item">
                         <a class="nav-link" href="/sales">Sale</a>
                     </li>
-                    {% endif %}
                 </ul>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
@@ -814,18 +672,6 @@ def details():
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script>
-        
-            let timeout;
-            function resetTimer() {
-                clearTimeout(timeout);
-                timeout = setTimeout(function() {
-                    window.location.href = '/';
-                }, 5000);
-            }
-            document.onload = resetTimer;
-            document.onmousemove = resetTimer;
-            document.onkeypress = resetTimer;
-        
             function searchSalesTable() {
                 let input = document.getElementById('sales-search-box').value.toLowerCase();
                 let rows = document.querySelectorAll('#sales-table-body tr');
@@ -862,7 +708,6 @@ def details():
     ''', person_sales=person_sales)
 
 @app.route('/sales', methods=['GET', 'POST'])
-@login_required
 def sales():
     if request.method == 'POST':
         data = request.json
@@ -929,7 +774,6 @@ def sales():
             <a class="navbar-brand" href="/">Market App</a>
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav mr-auto">
-                    {% if current_user.is_authenticated %}
                     <li class="nav-item">
                         <a class="nav-link" href="/stock">Stock</a>
                     </li>
@@ -939,7 +783,6 @@ def sales():
                     <li class="nav-item">
                         <a class="nav-link" href="/sales">Sale</a>
                     </li>
-                    {% endif %}
                 </ul>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
@@ -1060,18 +903,6 @@ def sales():
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
         <script>
-        
-            let timeout;
-            function resetTimer() {
-                clearTimeout(timeout);
-                timeout = setTimeout(function() {
-                    window.location.href = '/';
-                }, 5000);
-            }
-            document.onload = resetTimer;
-            document.onmousemove = resetTimer;
-            document.onkeypress = resetTimer;
-        
             let interval;
             const cart = {};
             
@@ -1360,13 +1191,13 @@ if __name__ == '__main__':
     flask_thread = threading.Thread(target=run_flask)
     flask_thread.start()
 
-    def on_closed():
-        try:
-            requests.post('http://127.0.0.1:5000/shutdown')
-        except requests.exceptions.RequestException:
-            pass
-        finally:
-            os._exit(0)
+  #  def on_closed():
+   #     try:
+    #        requests.post('http://127.0.0.1:5000/shutdown')
+      #  except requests.exceptions.RequestException:
+     #       pass
+       # finally:
+        #    os._exit(0)
 
     webview.create_window("Market App", "http://127.0.0.1:5000/")
     webview.start()
