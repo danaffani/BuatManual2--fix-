@@ -2,1184 +2,323 @@
    'C:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
    '(fix)\\build\\app\\app.exe',
    'EXECUTABLE'),
-  ('webview\\lib\\runtimes\\win-x64\\native\\WebView2Loader.dll',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\webview\\lib\\runtimes\\win-x64\\native\\WebView2Loader.dll',
-   'BINARY'),
-  ('webview\\lib\\WebBrowserInterop.x64.dll',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\webview\\lib\\WebBrowserInterop.x64.dll',
-   'BINARY'),
-  ('webview\\lib\\runtimes\\win-x86\\native\\WebView2Loader.dll',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\webview\\lib\\runtimes\\win-x86\\native\\WebView2Loader.dll',
-   'BINARY'),
-  ('webview\\lib\\WebBrowserInterop.x86.dll',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\webview\\lib\\WebBrowserInterop.x86.dll',
-   'BINARY'),
-  ('webview\\lib\\runtimes\\win-arm64\\native\\WebView2Loader.dll',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\webview\\lib\\runtimes\\win-arm64\\native\\WebView2Loader.dll',
-   'BINARY'),
-  ('webview\\lib\\Microsoft.Web.WebView2.WinForms.dll',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\webview\\lib\\Microsoft.Web.WebView2.WinForms.dll',
-   'BINARY'),
-  ('webview\\lib\\Microsoft.Web.WebView2.Core.dll',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\webview\\lib\\Microsoft.Web.WebView2.Core.dll',
-   'BINARY'),
   ('python312.dll',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.1520.0_x64__qbz5n2kfra8p0\\python312.dll',
-   'BINARY'),
-  ('pythonnet\\runtime\\Python.Runtime.dll',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\pythonnet\\runtime\\Python.Runtime.dll',
-   'BINARY'),
-  ('clr_loader\\ffi\\dlls\\amd64\\ClrLoader.dll',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\clr_loader\\ffi\\dlls\\amd64\\ClrLoader.dll',
-   'BINARY'),
-  ('clr_loader\\ffi\\dlls\\x86\\ClrLoader.dll',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\clr_loader\\ffi\\dlls\\x86\\ClrLoader.dll',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\python312.dll',
    'BINARY'),
   ('select.pyd',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.1520.0_x64__qbz5n2kfra8p0\\DLLs\\select.pyd',
-   'EXTENSION'),
-  ('_lzma.pyd',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.1520.0_x64__qbz5n2kfra8p0\\DLLs\\_lzma.pyd',
-   'EXTENSION'),
-  ('_bz2.pyd',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.1520.0_x64__qbz5n2kfra8p0\\DLLs\\_bz2.pyd',
-   'EXTENSION'),
-  ('unicodedata.pyd',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.1520.0_x64__qbz5n2kfra8p0\\DLLs\\unicodedata.pyd',
-   'EXTENSION'),
-  ('_socket.pyd',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.1520.0_x64__qbz5n2kfra8p0\\DLLs\\_socket.pyd',
-   'EXTENSION'),
-  ('_decimal.pyd',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.1520.0_x64__qbz5n2kfra8p0\\DLLs\\_decimal.pyd',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\DLLs\\select.pyd',
    'EXTENSION'),
   ('_hashlib.pyd',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.1520.0_x64__qbz5n2kfra8p0\\DLLs\\_hashlib.pyd',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\DLLs\\_hashlib.pyd',
    'EXTENSION'),
-  ('_ctypes.pyd',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.1520.0_x64__qbz5n2kfra8p0\\DLLs\\_ctypes.pyd',
+  ('_lzma.pyd',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\DLLs\\_lzma.pyd',
    'EXTENSION'),
-  ('_ssl.pyd',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.1520.0_x64__qbz5n2kfra8p0\\DLLs\\_ssl.pyd',
-   'EXTENSION'),
-  ('_queue.pyd',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.1520.0_x64__qbz5n2kfra8p0\\DLLs\\_queue.pyd',
-   'EXTENSION'),
-  ('_overlapped.pyd',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.1520.0_x64__qbz5n2kfra8p0\\DLLs\\_overlapped.pyd',
-   'EXTENSION'),
-  ('_multiprocessing.pyd',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.1520.0_x64__qbz5n2kfra8p0\\DLLs\\_multiprocessing.pyd',
+  ('_bz2.pyd',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\DLLs\\_bz2.pyd',
    'EXTENSION'),
   ('pyexpat.pyd',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.1520.0_x64__qbz5n2kfra8p0\\DLLs\\pyexpat.pyd',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\DLLs\\pyexpat.pyd',
    'EXTENSION'),
-  ('_asyncio.pyd',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.1520.0_x64__qbz5n2kfra8p0\\DLLs\\_asyncio.pyd',
+  ('_ssl.pyd',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\DLLs\\_ssl.pyd',
+   'EXTENSION'),
+  ('unicodedata.pyd',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\DLLs\\unicodedata.pyd',
+   'EXTENSION'),
+  ('_decimal.pyd',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\DLLs\\_decimal.pyd',
+   'EXTENSION'),
+  ('_multiprocessing.pyd',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\DLLs\\_multiprocessing.pyd',
+   'EXTENSION'),
+  ('_socket.pyd',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\DLLs\\_socket.pyd',
+   'EXTENSION'),
+  ('_ctypes.pyd',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\DLLs\\_ctypes.pyd',
+   'EXTENSION'),
+  ('_queue.pyd',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\DLLs\\_queue.pyd',
    'EXTENSION'),
   ('_wmi.pyd',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.1520.0_x64__qbz5n2kfra8p0\\DLLs\\_wmi.pyd',
-   'EXTENSION'),
-  ('charset_normalizer\\md__mypyc.cp312-win_amd64.pyd',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\charset_normalizer\\md__mypyc.cp312-win_amd64.pyd',
-   'EXTENSION'),
-  ('charset_normalizer\\md.cp312-win_amd64.pyd',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\charset_normalizer\\md.cp312-win_amd64.pyd',
-   'EXTENSION'),
-  ('_cffi_backend.cp312-win_amd64.pyd',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\_cffi_backend.cp312-win_amd64.pyd',
-   'EXTENSION'),
-  ('_elementtree.pyd',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.1520.0_x64__qbz5n2kfra8p0\\DLLs\\_elementtree.pyd',
-   'EXTENSION'),
-  ('markupsafe\\_speedups.cp312-win_amd64.pyd',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\markupsafe\\_speedups.cp312-win_amd64.pyd',
-   'EXTENSION'),
-  ('zope\\interface\\_zope_interface_coptimizations.cp312-win_amd64.pyd',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\zope\\interface\\_zope_interface_coptimizations.cp312-win_amd64.pyd',
-   'EXTENSION'),
-  ('greenlet\\_greenlet.cp312-win_amd64.pyd',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\greenlet\\_greenlet.cp312-win_amd64.pyd',
-   'EXTENSION'),
-  ('gevent\\libuv\\_corecffi.pyd',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\gevent\\libuv\\_corecffi.pyd',
-   'EXTENSION'),
-  ('gevent\\libev\\corecext.cp312-win_amd64.pyd',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\gevent\\libev\\corecext.cp312-win_amd64.pyd',
-   'EXTENSION'),
-  ('gevent\\_gevent_cqueue.cp312-win_amd64.pyd',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\gevent\\_gevent_cqueue.cp312-win_amd64.pyd',
-   'EXTENSION'),
-  ('gevent\\_gevent_clocal.cp312-win_amd64.pyd',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\gevent\\_gevent_clocal.cp312-win_amd64.pyd',
-   'EXTENSION'),
-  ('gevent\\_gevent_cgreenlet.cp312-win_amd64.pyd',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\gevent\\_gevent_cgreenlet.cp312-win_amd64.pyd',
-   'EXTENSION'),
-  ('gevent\\_gevent_cevent.cp312-win_amd64.pyd',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\gevent\\_gevent_cevent.cp312-win_amd64.pyd',
-   'EXTENSION'),
-  ('gevent\\_gevent_c_waiter.cp312-win_amd64.pyd',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\gevent\\_gevent_c_waiter.cp312-win_amd64.pyd',
-   'EXTENSION'),
-  ('gevent\\_gevent_c_tracer.cp312-win_amd64.pyd',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\gevent\\_gevent_c_tracer.cp312-win_amd64.pyd',
-   'EXTENSION'),
-  ('gevent\\_gevent_c_semaphore.cp312-win_amd64.pyd',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\gevent\\_gevent_c_semaphore.cp312-win_amd64.pyd',
-   'EXTENSION'),
-  ('gevent\\_gevent_c_imap.cp312-win_amd64.pyd',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\gevent\\_gevent_c_imap.cp312-win_amd64.pyd',
-   'EXTENSION'),
-  ('gevent\\_gevent_c_ident.cp312-win_amd64.pyd',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\gevent\\_gevent_c_ident.cp312-win_amd64.pyd',
-   'EXTENSION'),
-  ('gevent\\_gevent_c_hub_primitives.cp312-win_amd64.pyd',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\gevent\\_gevent_c_hub_primitives.cp312-win_amd64.pyd',
-   'EXTENSION'),
-  ('gevent\\_gevent_c_hub_local.cp312-win_amd64.pyd',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\gevent\\_gevent_c_hub_local.cp312-win_amd64.pyd',
-   'EXTENSION'),
-  ('gevent\\_gevent_c_greenlet_primitives.cp312-win_amd64.pyd',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\gevent\\_gevent_c_greenlet_primitives.cp312-win_amd64.pyd',
-   'EXTENSION'),
-  ('gevent\\_gevent_c_abstract_linkable.cp312-win_amd64.pyd',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\gevent\\_gevent_c_abstract_linkable.cp312-win_amd64.pyd',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\DLLs\\_wmi.pyd',
    'EXTENSION'),
   ('_uuid.pyd',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.1520.0_x64__qbz5n2kfra8p0\\DLLs\\_uuid.pyd',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\DLLs\\_uuid.pyd',
    'EXTENSION'),
-  ('api-ms-win-crt-time-l1-1-0.dll',
+  ('markupsafe\\_speedups.cp312-win_amd64.pyd',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\markupsafe\\_speedups.cp312-win_amd64.pyd',
+   'EXTENSION'),
+  ('_overlapped.pyd',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\DLLs\\_overlapped.pyd',
+   'EXTENSION'),
+  ('_asyncio.pyd',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\DLLs\\_asyncio.pyd',
+   'EXTENSION'),
+  ('api-ms-win-crt-runtime-l1-1-0.dll',
    'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-crt-time-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-crt-conio-l1-1-0.dll',
-   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-crt-conio-l1-1-0.dll',
+   'Toolkit\\api-ms-win-crt-runtime-l1-1-0.dll',
    'BINARY'),
   ('api-ms-win-crt-environment-l1-1-0.dll',
    'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
    'Toolkit\\api-ms-win-crt-environment-l1-1-0.dll',
    'BINARY'),
-  ('api-ms-win-crt-process-l1-1-0.dll',
+  ('api-ms-win-crt-locale-l1-1-0.dll',
    'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-crt-process-l1-1-0.dll',
+   'Toolkit\\api-ms-win-crt-locale-l1-1-0.dll',
    'BINARY'),
   ('api-ms-win-crt-string-l1-1-0.dll',
    'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
    'Toolkit\\api-ms-win-crt-string-l1-1-0.dll',
    'BINARY'),
-  ('api-ms-win-crt-runtime-l1-1-0.dll',
+  ('api-ms-win-crt-heap-l1-1-0.dll',
    'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-crt-runtime-l1-1-0.dll',
+   'Toolkit\\api-ms-win-crt-heap-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-process-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-crt-process-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-time-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-crt-time-l1-1-0.dll',
+   'BINARY'),
+  ('VCRUNTIME140.dll',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\VCRUNTIME140.dll',
    'BINARY'),
   ('api-ms-win-crt-filesystem-l1-1-0.dll',
    'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
    'Toolkit\\api-ms-win-crt-filesystem-l1-1-0.dll',
    'BINARY'),
-  ('api-ms-win-crt-stdio-l1-1-0.dll',
+  ('api-ms-win-crt-conio-l1-1-0.dll',
    'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-crt-stdio-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-crt-heap-l1-1-0.dll',
-   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-crt-heap-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-crt-convert-l1-1-0.dll',
-   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-crt-convert-l1-1-0.dll',
-   'BINARY'),
-  ('VCRUNTIME140.dll',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.1520.0_x64__qbz5n2kfra8p0\\VCRUNTIME140.dll',
+   'Toolkit\\api-ms-win-crt-conio-l1-1-0.dll',
    'BINARY'),
   ('api-ms-win-crt-math-l1-1-0.dll',
    'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
    'Toolkit\\api-ms-win-crt-math-l1-1-0.dll',
    'BINARY'),
-  ('api-ms-win-crt-locale-l1-1-0.dll',
+  ('api-ms-win-crt-stdio-l1-1-0.dll',
    'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-crt-locale-l1-1-0.dll',
+   'Toolkit\\api-ms-win-crt-stdio-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-convert-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-crt-convert-l1-1-0.dll',
    'BINARY'),
   ('libcrypto-3.dll',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.1520.0_x64__qbz5n2kfra8p0\\DLLs\\libcrypto-3.dll',
-   'BINARY'),
-  ('libffi-8.dll',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.1520.0_x64__qbz5n2kfra8p0\\DLLs\\libffi-8.dll',
-   'BINARY'),
-  ('libssl-3.dll',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.1520.0_x64__qbz5n2kfra8p0\\DLLs\\libssl-3.dll',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\DLLs\\libcrypto-3.dll',
    'BINARY'),
   ('api-ms-win-crt-utility-l1-1-0.dll',
    'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
    'Toolkit\\api-ms-win-crt-utility-l1-1-0.dll',
    'BINARY'),
+  ('libssl-3.dll',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\DLLs\\libssl-3.dll',
+   'BINARY'),
+  ('libffi-8.dll',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\DLLs\\libffi-8.dll',
+   'BINARY'),
   ('VCRUNTIME140_1.dll',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.1520.0_x64__qbz5n2kfra8p0\\VCRUNTIME140_1.dll',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\VCRUNTIME140_1.dll',
    'BINARY'),
   ('ucrtbase.dll',
    'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
    'Toolkit\\ucrtbase.dll',
    'BINARY'),
-  ('api-ms-win-core-interlocked-l1-1-0.dll',
-   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-core-interlocked-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-errorhandling-l1-1-0.dll',
-   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-core-errorhandling-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-memory-l1-1-0.dll',
-   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-core-memory-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-sysinfo-l1-1-0.dll',
-   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-core-sysinfo-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-synch-l1-2-0.dll',
-   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-core-synch-l1-2-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-namedpipe-l1-1-0.dll',
-   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-core-namedpipe-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-processenvironment-l1-1-0.dll',
-   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-core-processenvironment-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-synch-l1-1-0.dll',
-   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-core-synch-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-console-l1-1-0.dll',
-   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-core-console-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-string-l1-1-0.dll',
-   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-core-string-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-file-l2-1-0.dll',
-   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-core-file-l2-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-processthreads-l1-1-0.dll',
-   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-core-processthreads-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-util-l1-1-0.dll',
-   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-core-util-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-debug-l1-1-0.dll',
-   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-core-debug-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-libraryloader-l1-1-0.dll',
-   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-core-libraryloader-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-timezone-l1-1-0.dll',
-   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-core-timezone-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-file-l1-2-0.dll',
-   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-core-file-l1-2-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-file-l1-1-0.dll',
-   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-core-file-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-heap-l1-1-0.dll',
-   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-core-heap-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-rtlsupport-l1-1-0.dll',
-   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-core-rtlsupport-l1-1-0.dll',
-   'BINARY'),
   ('api-ms-win-core-datetime-l1-1-0.dll',
    'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
    'Toolkit\\api-ms-win-core-datetime-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-profile-l1-1-0.dll',
-   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-core-profile-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-handle-l1-1-0.dll',
-   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-core-handle-l1-1-0.dll',
    'BINARY'),
   ('api-ms-win-core-processthreads-l1-1-1.dll',
    'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
    'Toolkit\\api-ms-win-core-processthreads-l1-1-1.dll',
    'BINARY'),
-  ('api-ms-win-core-localization-l1-2-0.dll',
+  ('api-ms-win-core-util-l1-1-0.dll',
    'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
-   'Toolkit\\api-ms-win-core-localization-l1-2-0.dll',
+   'Toolkit\\api-ms-win-core-util-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-file-l1-2-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-file-l1-2-0.dll',
    'BINARY'),
   ('api-ms-win-core-fibers-l1-1-0.dll',
    'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
    'Toolkit\\api-ms-win-core-fibers-l1-1-0.dll',
    'BINARY'),
+  ('api-ms-win-core-interlocked-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-interlocked-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-file-l2-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-file-l2-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-processenvironment-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-processenvironment-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-errorhandling-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-errorhandling-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-rtlsupport-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-rtlsupport-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-heap-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-heap-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-sysinfo-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-sysinfo-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-libraryloader-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-libraryloader-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-string-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-string-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-synch-l1-2-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-synch-l1-2-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-file-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-file-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-memory-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-memory-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-namedpipe-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-namedpipe-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-debug-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-debug-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-processthreads-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-processthreads-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-synch-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-synch-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-profile-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-profile-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-localization-l1-2-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-localization-l1-2-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-handle-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-handle-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-timezone-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-timezone-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-console-l1-1-0.dll',
+   'C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance '
+   'Toolkit\\api-ms-win-core-console-l1-1-0.dll',
+   'BINARY'),
   ('base_library.zip',
    'C:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
    '(fix)\\build\\app\\base_library.zip',
    'DATA'),
-  ('certifi\\py.typed',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\certifi\\py.typed',
+  ('importlib_metadata-8.0.0.dist-info\\RECORD',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\RECORD',
    'DATA'),
-  ('certifi\\cacert.pem',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\certifi\\cacert.pem',
+  ('importlib_metadata-8.0.0.dist-info\\LICENSE',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\LICENSE',
    'DATA'),
-  ('webview\\lib\\pywebview-android.jar',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\webview\\lib\\pywebview-android.jar',
+  ('importlib_metadata-8.0.0.dist-info\\REQUESTED',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\REQUESTED',
    'DATA'),
-  ('setuptools\\_vendor\\packaging-24.1.dist-info\\LICENSE.APACHE',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging-24.1.dist-info\\LICENSE.APACHE',
+  ('importlib_metadata-8.0.0.dist-info\\WHEEL',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\WHEEL',
    'DATA'),
-  ('setuptools\\_vendor\\typeguard-4.3.0.dist-info\\entry_points.txt',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\typeguard-4.3.0.dist-info\\entry_points.txt',
+  ('importlib_metadata-8.0.0.dist-info\\INSTALLER',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\INSTALLER',
    'DATA'),
-  ('setuptools\\_vendor\\tomli-2.0.1.dist-info\\LICENSE',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\tomli-2.0.1.dist-info\\LICENSE',
+  ('importlib_metadata-8.0.0.dist-info\\top_level.txt',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\top_level.txt',
    'DATA'),
-  ('setuptools\\_vendor\\typeguard-4.3.0.dist-info\\top_level.txt',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\typeguard-4.3.0.dist-info\\top_level.txt',
-   'DATA'),
-  ('setuptools\\_vendor\\typeguard-4.3.0.dist-info\\INSTALLER',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\typeguard-4.3.0.dist-info\\INSTALLER',
-   'DATA'),
-  ('setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\REQUESTED',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\REQUESTED',
-   'DATA'),
-  ('setuptools\\_vendor\\autocommand-2.2.2.dist-info\\METADATA',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\autocommand-2.2.2.dist-info\\METADATA',
-   'DATA'),
-  ('setuptools\\_vendor\\jaraco.context-5.3.0.dist-info\\WHEEL',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\jaraco.context-5.3.0.dist-info\\WHEEL',
-   'DATA'),
-  ('setuptools\\_vendor\\importlib_resources-6.4.0.dist-info\\WHEEL',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_resources-6.4.0.dist-info\\WHEEL',
-   'DATA'),
-  ('setuptools\\_vendor\\importlib_resources-6.4.0.dist-info\\RECORD',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_resources-6.4.0.dist-info\\RECORD',
-   'DATA'),
-  ('setuptools\\_vendor\\importlib_resources-6.4.0.dist-info\\INSTALLER',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_resources-6.4.0.dist-info\\INSTALLER',
-   'DATA'),
-  ('setuptools\\_vendor\\packaging-24.1.dist-info\\REQUESTED',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging-24.1.dist-info\\REQUESTED',
-   'DATA'),
-  ('setuptools\\_vendor\\packaging-24.1.dist-info\\METADATA',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging-24.1.dist-info\\METADATA',
-   'DATA'),
-  ('setuptools\\_vendor\\wheel-0.43.0.dist-info\\WHEEL',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel-0.43.0.dist-info\\WHEEL',
-   'DATA'),
-  ('setuptools\\_vendor\\ordered_set-4.1.0.dist-info\\METADATA',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\ordered_set-4.1.0.dist-info\\METADATA',
-   'DATA'),
-  ('setuptools\\_vendor\\tomli-2.0.1.dist-info\\WHEEL',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\tomli-2.0.1.dist-info\\WHEEL',
-   'DATA'),
-  ('setuptools\\_vendor\\zipp-3.19.2.dist-info\\LICENSE',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\zipp-3.19.2.dist-info\\LICENSE',
-   'DATA'),
-  ('setuptools\\_vendor\\zipp-3.19.2.dist-info\\RECORD',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\zipp-3.19.2.dist-info\\RECORD',
-   'DATA'),
-  ('setuptools\\_vendor\\zipp-3.19.2.dist-info\\REQUESTED',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\zipp-3.19.2.dist-info\\REQUESTED',
-   'DATA'),
-  ('setuptools\\_vendor\\platformdirs-4.2.2.dist-info\\licenses\\LICENSE',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\platformdirs-4.2.2.dist-info\\licenses\\LICENSE',
-   'DATA'),
-  ('setuptools\\_vendor\\backports.tarfile-1.2.0.dist-info\\LICENSE',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\backports.tarfile-1.2.0.dist-info\\LICENSE',
-   'DATA'),
-  ('setuptools\\_vendor\\typing_extensions-4.12.2.dist-info\\WHEEL',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\typing_extensions-4.12.2.dist-info\\WHEEL',
-   'DATA'),
-  ('setuptools\\_vendor\\ordered_set-4.1.0.dist-info\\RECORD',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\ordered_set-4.1.0.dist-info\\RECORD',
-   'DATA'),
-  ('setuptools\\_vendor\\ordered_set-4.1.0.dist-info\\REQUESTED',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\ordered_set-4.1.0.dist-info\\REQUESTED',
-   'DATA'),
-  ('setuptools\\_vendor\\autocommand-2.2.2.dist-info\\RECORD',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\autocommand-2.2.2.dist-info\\RECORD',
-   'DATA'),
-  ('setuptools\\_vendor\\jaraco.functools-4.0.1.dist-info\\WHEEL',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\jaraco.functools-4.0.1.dist-info\\WHEEL',
-   'DATA'),
-  ('setuptools\\_vendor\\importlib_resources-6.4.0.dist-info\\METADATA',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_resources-6.4.0.dist-info\\METADATA',
-   'DATA'),
-  ('setuptools\\_vendor\\inflect-7.3.1.dist-info\\LICENSE',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\inflect-7.3.1.dist-info\\LICENSE',
-   'DATA'),
-  ('setuptools\\_vendor\\packaging-24.1.dist-info\\RECORD',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging-24.1.dist-info\\RECORD',
-   'DATA'),
-  ('setuptools\\_vendor\\typing_extensions-4.12.2.dist-info\\METADATA',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\typing_extensions-4.12.2.dist-info\\METADATA',
-   'DATA'),
-  ('setuptools\\_vendor\\typeguard-4.3.0.dist-info\\RECORD',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\typeguard-4.3.0.dist-info\\RECORD',
-   'DATA'),
-  ('setuptools\\_vendor\\wheel-0.43.0.dist-info\\RECORD',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel-0.43.0.dist-info\\RECORD',
-   'DATA'),
-  ('setuptools\\_vendor\\tomli-2.0.1.dist-info\\RECORD',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\tomli-2.0.1.dist-info\\RECORD',
-   'DATA'),
-  ('setuptools\\_vendor\\backports.tarfile-1.2.0.dist-info\\top_level.txt',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\backports.tarfile-1.2.0.dist-info\\top_level.txt',
-   'DATA'),
-  ('setuptools\\_vendor\\ordered_set-4.1.0.dist-info\\WHEEL',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\ordered_set-4.1.0.dist-info\\WHEEL',
-   'DATA'),
-  ('setuptools\\_vendor\\tomli-2.0.1.dist-info\\METADATA',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\tomli-2.0.1.dist-info\\METADATA',
-   'DATA'),
-  ('setuptools\\_vendor\\typeguard-4.3.0.dist-info\\LICENSE',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\typeguard-4.3.0.dist-info\\LICENSE',
-   'DATA'),
-  ('setuptools\\_vendor\\autocommand-2.2.2.dist-info\\WHEEL',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\autocommand-2.2.2.dist-info\\WHEEL',
-   'DATA'),
-  ('setuptools\\_vendor\\platformdirs-4.2.2.dist-info\\RECORD',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\platformdirs-4.2.2.dist-info\\RECORD',
-   'DATA'),
-  ('setuptools\\_vendor\\inflect-7.3.1.dist-info\\RECORD',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\inflect-7.3.1.dist-info\\RECORD',
-   'DATA'),
-  ('setuptools\\_vendor\\inflect-7.3.1.dist-info\\METADATA',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\inflect-7.3.1.dist-info\\METADATA',
-   'DATA'),
-  ('setuptools\\_vendor\\packaging-24.1.dist-info\\LICENSE.BSD',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging-24.1.dist-info\\LICENSE.BSD',
-   'DATA'),
-  ('setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\RECORD',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\RECORD',
-   'DATA'),
-  ('setuptools\\_vendor\\more_itertools-10.3.0.dist-info\\RECORD',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\more_itertools-10.3.0.dist-info\\RECORD',
-   'DATA'),
-  ('setuptools\\_vendor\\more_itertools-10.3.0.dist-info\\METADATA',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\more_itertools-10.3.0.dist-info\\METADATA',
-   'DATA'),
-  ('setuptools\\_vendor\\autocommand-2.2.2.dist-info\\INSTALLER',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\autocommand-2.2.2.dist-info\\INSTALLER',
-   'DATA'),
-  ('setuptools\\_vendor\\jaraco.text-3.12.1.dist-info\\top_level.txt',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\jaraco.text-3.12.1.dist-info\\top_level.txt',
-   'DATA'),
-  ('setuptools\\_vendor\\wheel-0.43.0.dist-info\\LICENSE.txt',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel-0.43.0.dist-info\\LICENSE.txt',
-   'DATA'),
-  ('setuptools\\_vendor\\typing_extensions-4.12.2.dist-info\\LICENSE',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\typing_extensions-4.12.2.dist-info\\LICENSE',
-   'DATA'),
-  ('setuptools\\_vendor\\backports.tarfile-1.2.0.dist-info\\WHEEL',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\backports.tarfile-1.2.0.dist-info\\WHEEL',
-   'DATA'),
-  ('setuptools\\_vendor\\jaraco.text-3.12.1.dist-info\\WHEEL',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\jaraco.text-3.12.1.dist-info\\WHEEL',
-   'DATA'),
-  ('setuptools\\_vendor\\typeguard-4.3.0.dist-info\\WHEEL',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\typeguard-4.3.0.dist-info\\WHEEL',
-   'DATA'),
-  ('setuptools\\_vendor\\backports.tarfile-1.2.0.dist-info\\INSTALLER',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\backports.tarfile-1.2.0.dist-info\\INSTALLER',
-   'DATA'),
-  ('setuptools\\_vendor\\inflect-7.3.1.dist-info\\INSTALLER',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\inflect-7.3.1.dist-info\\INSTALLER',
-   'DATA'),
-  ('setuptools\\_vendor\\autocommand-2.2.2.dist-info\\top_level.txt',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\autocommand-2.2.2.dist-info\\top_level.txt',
-   'DATA'),
-  ('setuptools\\_vendor\\jaraco.functools-4.0.1.dist-info\\METADATA',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\jaraco.functools-4.0.1.dist-info\\METADATA',
-   'DATA'),
-  ('setuptools\\_vendor\\jaraco.text-3.12.1.dist-info\\LICENSE',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\jaraco.text-3.12.1.dist-info\\LICENSE',
-   'DATA'),
-  ('setuptools\\_vendor\\jaraco.text-3.12.1.dist-info\\INSTALLER',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\jaraco.text-3.12.1.dist-info\\INSTALLER',
-   'DATA'),
-  ('setuptools\\_vendor\\importlib_resources-6.4.0.dist-info\\LICENSE',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_resources-6.4.0.dist-info\\LICENSE',
-   'DATA'),
-  ('setuptools\\_vendor\\ordered_set-4.1.0.dist-info\\INSTALLER',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\ordered_set-4.1.0.dist-info\\INSTALLER',
-   'DATA'),
-  ('setuptools\\_vendor\\jaraco.functools-4.0.1.dist-info\\INSTALLER',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\jaraco.functools-4.0.1.dist-info\\INSTALLER',
-   'DATA'),
-  ('setuptools\\_vendor\\packaging-24.1.dist-info\\WHEEL',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging-24.1.dist-info\\WHEEL',
-   'DATA'),
-  ('setuptools\\_vendor\\zipp-3.19.2.dist-info\\WHEEL',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\zipp-3.19.2.dist-info\\WHEEL',
-   'DATA'),
-  ('setuptools\\_vendor\\backports.tarfile-1.2.0.dist-info\\REQUESTED',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\backports.tarfile-1.2.0.dist-info\\REQUESTED',
-   'DATA'),
-  ('setuptools\\_vendor\\packaging-24.1.dist-info\\LICENSE',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging-24.1.dist-info\\LICENSE',
-   'DATA'),
-  ('setuptools\\_vendor\\inflect-7.3.1.dist-info\\WHEEL',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\inflect-7.3.1.dist-info\\WHEEL',
-   'DATA'),
-  ('setuptools\\_vendor\\zipp-3.19.2.dist-info\\INSTALLER',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\zipp-3.19.2.dist-info\\INSTALLER',
-   'DATA'),
-  ('setuptools\\_vendor\\jaraco.functools-4.0.1.dist-info\\LICENSE',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\jaraco.functools-4.0.1.dist-info\\LICENSE',
-   'DATA'),
-  ('setuptools\\_vendor\\inflect-7.3.1.dist-info\\top_level.txt',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\inflect-7.3.1.dist-info\\top_level.txt',
-   'DATA'),
-  ('setuptools\\_vendor\\platformdirs-4.2.2.dist-info\\INSTALLER',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\platformdirs-4.2.2.dist-info\\INSTALLER',
-   'DATA'),
-  ('setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\top_level.txt',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\top_level.txt',
-   'DATA'),
-  ('setuptools\\_vendor\\zipp-3.19.2.dist-info\\METADATA',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\zipp-3.19.2.dist-info\\METADATA',
-   'DATA'),
-  ('setuptools\\_vendor\\wheel-0.43.0.dist-info\\entry_points.txt',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel-0.43.0.dist-info\\entry_points.txt',
-   'DATA'),
-  ('setuptools\\_vendor\\more_itertools-10.3.0.dist-info\\REQUESTED',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\more_itertools-10.3.0.dist-info\\REQUESTED',
-   'DATA'),
-  ('setuptools\\_vendor\\autocommand-2.2.2.dist-info\\LICENSE',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\autocommand-2.2.2.dist-info\\LICENSE',
-   'DATA'),
-  ('setuptools\\_vendor\\typing_extensions-4.12.2.dist-info\\RECORD',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\typing_extensions-4.12.2.dist-info\\RECORD',
-   'DATA'),
-  ('setuptools\\_vendor\\backports.tarfile-1.2.0.dist-info\\METADATA',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\backports.tarfile-1.2.0.dist-info\\METADATA',
-   'DATA'),
-  ('setuptools\\_vendor\\jaraco.text-3.12.1.dist-info\\METADATA',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\jaraco.text-3.12.1.dist-info\\METADATA',
-   'DATA'),
-  ('setuptools\\_vendor\\typing_extensions-4.12.2.dist-info\\INSTALLER',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\typing_extensions-4.12.2.dist-info\\INSTALLER',
-   'DATA'),
-  ('setuptools\\_vendor\\jaraco.context-5.3.0.dist-info\\LICENSE',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\jaraco.context-5.3.0.dist-info\\LICENSE',
-   'DATA'),
-  ('setuptools\\_vendor\\jaraco.text-3.12.1.dist-info\\RECORD',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\jaraco.text-3.12.1.dist-info\\RECORD',
-   'DATA'),
-  ('setuptools\\_vendor\\more_itertools-10.3.0.dist-info\\INSTALLER',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\more_itertools-10.3.0.dist-info\\INSTALLER',
-   'DATA'),
-  ('setuptools\\_vendor\\packaging-24.1.dist-info\\INSTALLER',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging-24.1.dist-info\\INSTALLER',
-   'DATA'),
-  ('setuptools\\_vendor\\jaraco.context-5.3.0.dist-info\\INSTALLER',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\jaraco.context-5.3.0.dist-info\\INSTALLER',
-   'DATA'),
-  ('setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\METADATA',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\METADATA',
-   'DATA'),
-  ('setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\WHEEL',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\WHEEL',
-   'DATA'),
-  ('setuptools\\_vendor\\more_itertools-10.3.0.dist-info\\LICENSE',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\more_itertools-10.3.0.dist-info\\LICENSE',
-   'DATA'),
-  ('setuptools\\_vendor\\importlib_resources-6.4.0.dist-info\\top_level.txt',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_resources-6.4.0.dist-info\\top_level.txt',
-   'DATA'),
-  ('setuptools\\_vendor\\importlib_resources-6.4.0.dist-info\\REQUESTED',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_resources-6.4.0.dist-info\\REQUESTED',
-   'DATA'),
-  ('setuptools\\_vendor\\platformdirs-4.2.2.dist-info\\METADATA',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\platformdirs-4.2.2.dist-info\\METADATA',
-   'DATA'),
-  ('setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\INSTALLER',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\INSTALLER',
-   'DATA'),
-  ('setuptools\\_vendor\\jaraco.context-5.3.0.dist-info\\top_level.txt',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\jaraco.context-5.3.0.dist-info\\top_level.txt',
-   'DATA'),
-  ('setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\LICENSE',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\LICENSE',
-   'DATA'),
-  ('setuptools\\_vendor\\platformdirs-4.2.2.dist-info\\REQUESTED',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\platformdirs-4.2.2.dist-info\\REQUESTED',
-   'DATA'),
-  ('setuptools\\_vendor\\typeguard-4.3.0.dist-info\\METADATA',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\typeguard-4.3.0.dist-info\\METADATA',
-   'DATA'),
-  ('setuptools\\_vendor\\jaraco.functools-4.0.1.dist-info\\RECORD',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\jaraco.functools-4.0.1.dist-info\\RECORD',
-   'DATA'),
-  ('setuptools\\_vendor\\jaraco.text-3.12.1.dist-info\\REQUESTED',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\jaraco.text-3.12.1.dist-info\\REQUESTED',
-   'DATA'),
-  ('setuptools\\_vendor\\wheel-0.43.0.dist-info\\INSTALLER',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel-0.43.0.dist-info\\INSTALLER',
-   'DATA'),
-  ('setuptools\\_vendor\\backports.tarfile-1.2.0.dist-info\\RECORD',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\backports.tarfile-1.2.0.dist-info\\RECORD',
-   'DATA'),
-  ('setuptools\\_vendor\\tomli-2.0.1.dist-info\\REQUESTED',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\tomli-2.0.1.dist-info\\REQUESTED',
-   'DATA'),
-  ('setuptools\\_vendor\\wheel-0.43.0.dist-info\\METADATA',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel-0.43.0.dist-info\\METADATA',
-   'DATA'),
-  ('setuptools\\_vendor\\more_itertools-10.3.0.dist-info\\WHEEL',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\more_itertools-10.3.0.dist-info\\WHEEL',
-   'DATA'),
-  ('setuptools\\_vendor\\wheel-0.43.0.dist-info\\REQUESTED',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel-0.43.0.dist-info\\REQUESTED',
-   'DATA'),
-  ('setuptools\\_vendor\\platformdirs-4.2.2.dist-info\\WHEEL',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\platformdirs-4.2.2.dist-info\\WHEEL',
-   'DATA'),
-  ('setuptools\\_vendor\\zipp-3.19.2.dist-info\\top_level.txt',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\zipp-3.19.2.dist-info\\top_level.txt',
-   'DATA'),
-  ('setuptools\\_vendor\\jaraco.context-5.3.0.dist-info\\METADATA',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\jaraco.context-5.3.0.dist-info\\METADATA',
-   'DATA'),
-  ('setuptools\\_vendor\\jaraco.context-5.3.0.dist-info\\RECORD',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\jaraco.context-5.3.0.dist-info\\RECORD',
-   'DATA'),
-  ('setuptools\\_vendor\\jaraco.functools-4.0.1.dist-info\\top_level.txt',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\jaraco.functools-4.0.1.dist-info\\top_level.txt',
-   'DATA'),
-  ('setuptools\\_vendor\\jaraco\\text\\Lorem ipsum.txt',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\jaraco\\text\\Lorem '
-   'ipsum.txt',
-   'DATA'),
-  ('setuptools\\_vendor\\tomli-2.0.1.dist-info\\INSTALLER',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\tomli-2.0.1.dist-info\\INSTALLER',
-   'DATA'),
-  ('zope.interface-7.0.1.dist-info\\INSTALLER',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\zope.interface-7.0.1.dist-info\\INSTALLER',
-   'DATA'),
-  ('gevent-24.2.1.dist-info\\WHEEL',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\gevent-24.2.1.dist-info\\WHEEL',
-   'DATA'),
-  ('gevent-24.2.1.dist-info\\LICENSE',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\gevent-24.2.1.dist-info\\LICENSE',
-   'DATA'),
-  ('setuptools-72.1.0.dist-info\\entry_points.txt',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools-72.1.0.dist-info\\entry_points.txt',
-   'DATA'),
-  ('zope.interface-7.0.1.dist-info\\RECORD',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\zope.interface-7.0.1.dist-info\\RECORD',
-   'DATA'),
-  ('pycparser-2.22.dist-info\\INSTALLER',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\pycparser-2.22.dist-info\\INSTALLER',
-   'DATA'),
-  ('greenlet-3.0.3.dist-info\\INSTALLER',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\greenlet-3.0.3.dist-info\\INSTALLER',
-   'DATA'),
-  ('gevent-24.2.1.dist-info\\top_level.txt',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\gevent-24.2.1.dist-info\\top_level.txt',
-   'DATA'),
-  ('greenlet-3.0.3.dist-info\\RECORD',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\greenlet-3.0.3.dist-info\\RECORD',
-   'DATA'),
-  ('greenlet-3.0.3.dist-info\\WHEEL',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\greenlet-3.0.3.dist-info\\WHEEL',
-   'DATA'),
-  ('zope.interface-7.0.1.dist-info\\METADATA',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\zope.interface-7.0.1.dist-info\\METADATA',
-   'DATA'),
-  ('setuptools-72.1.0.dist-info\\LICENSE',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools-72.1.0.dist-info\\LICENSE',
-   'DATA'),
-  ('pycparser-2.22.dist-info\\WHEEL',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\pycparser-2.22.dist-info\\WHEEL',
-   'DATA'),
-  ('cffi-1.17.0.dist-info\\LICENSE',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\cffi-1.17.0.dist-info\\LICENSE',
-   'DATA'),
-  ('pycparser-2.22.dist-info\\LICENSE',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\pycparser-2.22.dist-info\\LICENSE',
-   'DATA'),
-  ('setuptools-72.1.0.dist-info\\INSTALLER',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools-72.1.0.dist-info\\INSTALLER',
-   'DATA'),
-  ('gevent-24.2.1.dist-info\\RECORD',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\gevent-24.2.1.dist-info\\RECORD',
-   'DATA'),
-  ('zope.event-5.0.dist-info\\LICENSE.txt',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\zope.event-5.0.dist-info\\LICENSE.txt',
-   'DATA'),
-  ('gevent-24.2.1.dist-info\\INSTALLER',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\gevent-24.2.1.dist-info\\INSTALLER',
-   'DATA'),
-  ('zope.interface-7.0.1.dist-info\\LICENSE.txt',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\zope.interface-7.0.1.dist-info\\LICENSE.txt',
-   'DATA'),
-  ('pycparser-2.22.dist-info\\RECORD',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\pycparser-2.22.dist-info\\RECORD',
-   'DATA'),
-  ('setuptools-72.1.0.dist-info\\WHEEL',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools-72.1.0.dist-info\\WHEEL',
-   'DATA'),
-  ('zope.event-5.0.dist-info\\RECORD',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\zope.event-5.0.dist-info\\RECORD',
-   'DATA'),
-  ('gevent-24.2.1.dist-info\\AUTHORS',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\gevent-24.2.1.dist-info\\AUTHORS',
-   'DATA'),
-  ('pycparser-2.22.dist-info\\top_level.txt',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\pycparser-2.22.dist-info\\top_level.txt',
-   'DATA'),
-  ('greenlet-3.0.3.dist-info\\LICENSE.PSF',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\greenlet-3.0.3.dist-info\\LICENSE.PSF',
-   'DATA'),
-  ('setuptools-72.1.0.dist-info\\RECORD',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools-72.1.0.dist-info\\RECORD',
-   'DATA'),
-  ('zope.event-5.0.dist-info\\namespace_packages.txt',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\zope.event-5.0.dist-info\\namespace_packages.txt',
-   'DATA'),
-  ('zope.event-5.0.dist-info\\WHEEL',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\zope.event-5.0.dist-info\\WHEEL',
-   'DATA'),
-  ('cffi-1.17.0.dist-info\\top_level.txt',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\cffi-1.17.0.dist-info\\top_level.txt',
-   'DATA'),
-  ('zope.event-5.0.dist-info\\INSTALLER',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\zope.event-5.0.dist-info\\INSTALLER',
-   'DATA'),
-  ('greenlet-3.0.3.dist-info\\LICENSE',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\greenlet-3.0.3.dist-info\\LICENSE',
-   'DATA'),
-  ('zope.interface-7.0.1.dist-info\\namespace_packages.txt',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\zope.interface-7.0.1.dist-info\\namespace_packages.txt',
-   'DATA'),
-  ('zope.interface-7.0.1.dist-info\\top_level.txt',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\zope.interface-7.0.1.dist-info\\top_level.txt',
-   'DATA'),
-  ('zope.interface-7.0.1.dist-info\\WHEEL',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\zope.interface-7.0.1.dist-info\\WHEEL',
-   'DATA'),
-  ('zope.event-5.0.dist-info\\top_level.txt',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\zope.event-5.0.dist-info\\top_level.txt',
-   'DATA'),
-  ('cffi-1.17.0.dist-info\\INSTALLER',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\cffi-1.17.0.dist-info\\INSTALLER',
-   'DATA'),
-  ('setuptools-72.1.0.dist-info\\top_level.txt',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools-72.1.0.dist-info\\top_level.txt',
-   'DATA'),
-  ('setuptools-72.1.0.dist-info\\METADATA',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools-72.1.0.dist-info\\METADATA',
-   'DATA'),
-  ('gevent-24.2.1.dist-info\\NOTICE',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\gevent-24.2.1.dist-info\\NOTICE',
-   'DATA'),
-  ('cffi-1.17.0.dist-info\\METADATA',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\cffi-1.17.0.dist-info\\METADATA',
-   'DATA'),
-  ('greenlet-3.0.3.dist-info\\top_level.txt',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\greenlet-3.0.3.dist-info\\top_level.txt',
-   'DATA'),
-  ('greenlet-3.0.3.dist-info\\AUTHORS',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\greenlet-3.0.3.dist-info\\AUTHORS',
-   'DATA'),
-  ('greenlet-3.0.3.dist-info\\METADATA',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\greenlet-3.0.3.dist-info\\METADATA',
-   'DATA'),
-  ('cffi-1.17.0.dist-info\\RECORD',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\cffi-1.17.0.dist-info\\RECORD',
-   'DATA'),
-  ('gevent-24.2.1.dist-info\\entry_points.txt',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\gevent-24.2.1.dist-info\\entry_points.txt',
-   'DATA'),
-  ('cffi-1.17.0.dist-info\\WHEEL',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\cffi-1.17.0.dist-info\\WHEEL',
-   'DATA'),
-  ('gevent-24.2.1.dist-info\\METADATA',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\gevent-24.2.1.dist-info\\METADATA',
-   'DATA'),
-  ('zope.event-5.0.dist-info\\METADATA',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\zope.event-5.0.dist-info\\METADATA',
-   'DATA'),
-  ('pycparser-2.22.dist-info\\METADATA',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\pycparser-2.22.dist-info\\METADATA',
-   'DATA'),
-  ('cffi-1.17.0.dist-info\\entry_points.txt',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\cffi-1.17.0.dist-info\\entry_points.txt',
-   'DATA'),
-  ('itsdangerous-2.2.0.dist-info\\METADATA',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\itsdangerous-2.2.0.dist-info\\METADATA',
-   'DATA'),
-  ('werkzeug-3.0.3.dist-info\\RECORD',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\werkzeug-3.0.3.dist-info\\RECORD',
-   'DATA'),
-  ('typeguard-4.3.0.dist-info\\RECORD',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\typeguard-4.3.0.dist-info\\RECORD',
-   'DATA'),
-  ('typeguard-4.3.0.dist-info\\top_level.txt',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\typeguard-4.3.0.dist-info\\top_level.txt',
-   'DATA'),
-  ('wheel-0.43.0.dist-info\\INSTALLER',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel-0.43.0.dist-info\\INSTALLER',
-   'DATA'),
-  ('flask-3.0.3.dist-info\\LICENSE.txt',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\flask-3.0.3.dist-info\\LICENSE.txt',
-   'DATA'),
-  ('werkzeug-3.0.3.dist-info\\WHEEL',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\werkzeug-3.0.3.dist-info\\WHEEL',
-   'DATA'),
-  ('flask-3.0.3.dist-info\\RECORD',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\flask-3.0.3.dist-info\\RECORD',
-   'DATA'),
-  ('typeguard-4.3.0.dist-info\\WHEEL',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\typeguard-4.3.0.dist-info\\WHEEL',
-   'DATA'),
-  ('flask-3.0.3.dist-info\\METADATA',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\flask-3.0.3.dist-info\\METADATA',
-   'DATA'),
-  ('blinker-1.8.2.dist-info\\INSTALLER',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\blinker-1.8.2.dist-info\\INSTALLER',
-   'DATA'),
-  ('typeguard-4.3.0.dist-info\\INSTALLER',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\typeguard-4.3.0.dist-info\\INSTALLER',
+  ('importlib_metadata-8.0.0.dist-info\\METADATA',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\METADATA',
    'DATA'),
   ('itsdangerous-2.2.0.dist-info\\INSTALLER',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\itsdangerous-2.2.0.dist-info\\INSTALLER',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\itsdangerous-2.2.0.dist-info\\INSTALLER',
    'DATA'),
-  ('typeguard-4.3.0.dist-info\\METADATA',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\typeguard-4.3.0.dist-info\\METADATA',
-   'DATA'),
-  ('itsdangerous-2.2.0.dist-info\\WHEEL',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\itsdangerous-2.2.0.dist-info\\WHEEL',
-   'DATA'),
-  ('blinker-1.8.2.dist-info\\WHEEL',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\blinker-1.8.2.dist-info\\WHEEL',
-   'DATA'),
-  ('flask-3.0.3.dist-info\\INSTALLER',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\flask-3.0.3.dist-info\\INSTALLER',
-   'DATA'),
-  ('werkzeug-3.0.3.dist-info\\LICENSE.txt',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\werkzeug-3.0.3.dist-info\\LICENSE.txt',
-   'DATA'),
-  ('wheel-0.43.0.dist-info\\LICENSE.txt',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel-0.43.0.dist-info\\LICENSE.txt',
-   'DATA'),
-  ('werkzeug-3.0.3.dist-info\\METADATA',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\werkzeug-3.0.3.dist-info\\METADATA',
-   'DATA'),
-  ('wheel-0.43.0.dist-info\\WHEEL',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel-0.43.0.dist-info\\WHEEL',
-   'DATA'),
-  ('blinker-1.8.2.dist-info\\RECORD',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\blinker-1.8.2.dist-info\\RECORD',
-   'DATA'),
-  ('flask-3.0.3.dist-info\\REQUESTED',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\flask-3.0.3.dist-info\\REQUESTED',
-   'DATA'),
-  ('wheel-0.43.0.dist-info\\RECORD',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel-0.43.0.dist-info\\RECORD',
-   'DATA'),
-  ('itsdangerous-2.2.0.dist-info\\LICENSE.txt',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\itsdangerous-2.2.0.dist-info\\LICENSE.txt',
+  ('werkzeug-3.0.3.dist-info\\RECORD',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\werkzeug-3.0.3.dist-info\\RECORD',
    'DATA'),
   ('blinker-1.8.2.dist-info\\METADATA',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\blinker-1.8.2.dist-info\\METADATA',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\blinker-1.8.2.dist-info\\METADATA',
    'DATA'),
-  ('flask-3.0.3.dist-info\\WHEEL',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\flask-3.0.3.dist-info\\WHEEL',
+  ('flask-3.0.3.dist-info\\INSTALLER',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\flask-3.0.3.dist-info\\INSTALLER',
    'DATA'),
-  ('blinker-1.8.2.dist-info\\LICENSE.txt',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\blinker-1.8.2.dist-info\\LICENSE.txt',
-   'DATA'),
-  ('flask-3.0.3.dist-info\\entry_points.txt',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\flask-3.0.3.dist-info\\entry_points.txt',
-   'DATA'),
-  ('wheel-0.43.0.dist-info\\REQUESTED',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel-0.43.0.dist-info\\REQUESTED',
-   'DATA'),
-  ('typeguard-4.3.0.dist-info\\entry_points.txt',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\typeguard-4.3.0.dist-info\\entry_points.txt',
-   'DATA'),
-  ('wheel-0.43.0.dist-info\\entry_points.txt',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel-0.43.0.dist-info\\entry_points.txt',
-   'DATA'),
-  ('wheel-0.43.0.dist-info\\METADATA',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel-0.43.0.dist-info\\METADATA',
-   'DATA'),
-  ('itsdangerous-2.2.0.dist-info\\RECORD',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\itsdangerous-2.2.0.dist-info\\RECORD',
+  ('flask-3.0.3.dist-info\\REQUESTED',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\flask-3.0.3.dist-info\\REQUESTED',
    'DATA'),
   ('werkzeug-3.0.3.dist-info\\INSTALLER',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\werkzeug-3.0.3.dist-info\\INSTALLER',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\werkzeug-3.0.3.dist-info\\INSTALLER',
    'DATA'),
-  ('typeguard-4.3.0.dist-info\\LICENSE',
-   'c:\\Users\\Dana\\Documents\\File Mama Era\\Phase2\\BuatManual2 '
-   '(flask)\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\typeguard-4.3.0.dist-info\\LICENSE',
+  ('itsdangerous-2.2.0.dist-info\\RECORD',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\itsdangerous-2.2.0.dist-info\\RECORD',
+   'DATA'),
+  ('blinker-1.8.2.dist-info\\WHEEL',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\blinker-1.8.2.dist-info\\WHEEL',
+   'DATA'),
+  ('itsdangerous-2.2.0.dist-info\\METADATA',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\itsdangerous-2.2.0.dist-info\\METADATA',
+   'DATA'),
+  ('werkzeug-3.0.3.dist-info\\METADATA',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\werkzeug-3.0.3.dist-info\\METADATA',
+   'DATA'),
+  ('flask-3.0.3.dist-info\\METADATA',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\flask-3.0.3.dist-info\\METADATA',
+   'DATA'),
+  ('itsdangerous-2.2.0.dist-info\\LICENSE.txt',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\itsdangerous-2.2.0.dist-info\\LICENSE.txt',
+   'DATA'),
+  ('flask-3.0.3.dist-info\\WHEEL',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\flask-3.0.3.dist-info\\WHEEL',
+   'DATA'),
+  ('werkzeug-3.0.3.dist-info\\WHEEL',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\werkzeug-3.0.3.dist-info\\WHEEL',
+   'DATA'),
+  ('werkzeug-3.0.3.dist-info\\LICENSE.txt',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\werkzeug-3.0.3.dist-info\\LICENSE.txt',
+   'DATA'),
+  ('blinker-1.8.2.dist-info\\RECORD',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\blinker-1.8.2.dist-info\\RECORD',
+   'DATA'),
+  ('blinker-1.8.2.dist-info\\INSTALLER',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\blinker-1.8.2.dist-info\\INSTALLER',
+   'DATA'),
+  ('itsdangerous-2.2.0.dist-info\\WHEEL',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\itsdangerous-2.2.0.dist-info\\WHEEL',
+   'DATA'),
+  ('flask-3.0.3.dist-info\\LICENSE.txt',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\flask-3.0.3.dist-info\\LICENSE.txt',
+   'DATA'),
+  ('flask-3.0.3.dist-info\\entry_points.txt',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\flask-3.0.3.dist-info\\entry_points.txt',
+   'DATA'),
+  ('flask-3.0.3.dist-info\\RECORD',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\flask-3.0.3.dist-info\\RECORD',
+   'DATA'),
+  ('blinker-1.8.2.dist-info\\LICENSE.txt',
+   'C:\\Users\\Dana\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\blinker-1.8.2.dist-info\\LICENSE.txt',
    'DATA')],)
