@@ -1,7 +1,0 @@
-person_id;person_name;visit_time;purchased_item;money_spent
-1;John Duke;17;28;230500.0
-2;Jane Smith;4;13;50000.0
-3;Alice Johnson;7;20;2000.00
-5;Charlie Davis;4;12;1200.00
-6;Dana;10;35;806000.0
-7;Test;3;5;95000.0

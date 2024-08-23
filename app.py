@@ -1,8 +1,7 @@
 import time
 from flask import Flask, render_template_string, request, redirect, jsonify, send_from_directory, url_for
-from flask_login import LoginManager, UserMixin, login_user, logout_user, login_required, current_user
 import webview
-import csv
+import openpyxl
 import json
 import threading
 import os
@@ -21,98 +20,30 @@ signal.signal(signal.SIGINT, signal_handler)
 app = Flask(__name__)
 app.secret_key = 'your_secret_key'
 
-class User(UserMixin):
-    def __init__(self, id):
-        self.id = id
-file_path = 'database/item.csv'
-person_file_path = 'database/person.csv'
-sales_file_path = 'database/sales.csv'
+file_path = 'database/item.xlsx'
+person_file_path = 'database/person.xlsx'
+sales_file_path = 'database/sales.xlsx'
 
-def detect_delimiter(file_path):
-    potential_delimiters = [',', ';', '\t']
-    delimiter_counts = {delimiter: 0 for delimiter in potential_delimiters}
+def read_excel(file_path):
+    workbook = openpyxl.load_workbook(file_path)
+    sheet = workbook.active
+    data = []
+    headers = [cell.value for cell in sheet[1]]  # Mengambil header dari baris pertama
+    for row in sheet.iter_rows(min_row=2, values_only=True):
+        item = {headers[i]: str(row[i]) if headers[i].endswith('_id') else row[i] for i in range(len(row))}
+        data.append(item)
+    return data
 
-    try:
-        with open(file_path, 'r') as f:
-            sample_lines = [next(f) for _ in range(5)]
-    except FileNotFoundError:
-        return ','
+def write_excel(data, file_path):
+    workbook = openpyxl.Workbook()
+    sheet = workbook.active
+    headers = list(data[0].keys())  # Convert dict_keys to a list
+    sheet.append(headers)  # Create headers in the first row
 
-    for delimiter in potential_delimiters:
-        for line in sample_lines:
-            delimiter_counts[delimiter] += line.count(delimiter)
+    for item in data:
+        sheet.append(list(item.values()))
 
-    best_delimiter = max(delimiter_counts, key=delimiter_counts.get)
-    return best_delimiter
-
-def read_csv(file_path):
-    delimiter = detect_delimiter(file_path)
-    try:
-        with open(file_path, mode='r') as f:
-            reader = csv.DictReader(f, delimiter=delimiter)
-            return [dict(row) for row in reader]
-    except FileNotFoundError:
-        return []
-    except Exception as e:
-        print(f"Error reading CSV file: {e}")
-        return []
-
-def write_csv(data, file_path):
-    delimiter = detect_delimiter(file_path)
-    try:
-        with open(file_path, mode='w', newline='') as f:
-            fieldnames = ['item_id', 'item_name', 'item_price', 'item_available', 'item_sold']
-            writer = csv.DictWriter(f, fieldnames=fieldnames, delimiter=delimiter)
-            writer.writeheader()
-            writer.writerows(data)
-    except Exception as e:
-        print(f"Error writing CSV file: {e}")
-        
-def read_person_csv(file_path):
-    delimiter = detect_delimiter(file_path)
-    try:
-        with open(file_path, mode='r') as f:
-            reader = csv.DictReader(f, delimiter=delimiter)
-            return [dict(row) for row in reader]
-    except FileNotFoundError:
-        return []
-    except Exception as e:
-        print(f"Error reading CSV file: {e}")
-        return []
-
-def write_person_csv(data, file_path):
-    delimiter = detect_delimiter(file_path)
-    try:
-        with open(file_path, mode='w', newline='') as f:
-            fieldnames = ['person_id', 'person_name', 'visit_time', 'purchased_item', 'money_spent']
-            writer = csv.DictWriter(f, fieldnames=fieldnames, delimiter=delimiter)
-            writer.writeheader()
-            writer.writerows(data)
-    except Exception as e:
-        print(f"Error writing CSV file: {e}")
-
-def read_sales_csv(file_path):
-    delimiter = detect_delimiter(file_path)
-    try:
-        with open(file_path, mode='r') as f:
-            reader = csv.DictReader(f, delimiter=delimiter)
-            return [dict(row) for row in reader]
-    except FileNotFoundError:
-        return []
-    except Exception as e:
-        print(f"Error reading CSV file: {e}")
-        return []
-
-def write_sales_csv(data, file_path):
-    delimiter = detect_delimiter(file_path)
-    try:
-        with open(file_path, mode='w', newline='') as f:
-            fieldnames = ['sale_id', 'person_id', 'item_id', 'item_quantity', 'item_total_price', 'purchase_date']
-            writer = csv.DictWriter(f, fieldnames=fieldnames, delimiter=delimiter)
-            writer.writeheader()
-            writer.writerows(data)
-    except Exception as e:
-        print(f"Error writing CSV file: {e}")
+    workbook.save(file_path)
 
 def get_next_item_id(data, key):
     if not data:
@@ -149,7 +80,6 @@ def home():
         </nav>
         <div class="container mt-5">
             <h1 class="text-center mt-4">Welcome to the Market App</h1>
-            <a href="/logout">Logout</a>
         </div>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
@@ -204,11 +134,11 @@ def stock():
     if request.method == 'POST':
         if request.form.get('action') == 'delete':
             item_id = request.form['item_id']
-            data = [item for item in read_csv(file_path) if item['item_id'] != item_id]
-            write_csv(data, file_path)
+            data = [item for item in read_excel(file_path) if item['item_id'] != item_id]
+            write_excel(data, file_path)
             return redirect('/stock')
 
-    data = read_csv(file_path)
+    data = read_excel(file_path)
     return render_template_string(r'''
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -327,7 +257,7 @@ def open_stock_folder():
 
 @app.route('/edit', methods=['GET', 'POST'])
 def edit():
-    data = read_csv(file_path)
+    data = read_excel(file_path)
     if request.method == 'POST':
         item_id = request.form['item_id']
         if item_id:
@@ -346,7 +276,7 @@ def edit():
                 'item_sold': '0'
             }
             data.append(new_item)
-        write_csv(data, file_path)
+        write_excel(data, file_path)
         return redirect('/stock')
 
     item_id = request.args.get('id')
@@ -406,12 +336,11 @@ def edit():
 
 @app.route('/person', methods=['GET', 'POST'])
 def person():
-    data = read_person_csv(person_file_path)
-    if request.method == 'POST':
-        if request.form.get('action') == 'delete':
+    data = read_excel(person_file_path)
+    if request.method == 'POST' and request.form.get('action') == 'delete':
             person_id = request.form['person_id']
             data = [person for person in data if person['person_id'] != person_id]
-            write_person_csv(data, person_file_path)
+            write_excel(data, person_file_path)
             return redirect('/person')
     return render_template_string(r'''
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -468,6 +397,7 @@ def person():
                             <a href="/edit_person?id={{ person.person_id }}" class="btn btn-warning btn-sm">Edit</a>
                             <form method="POST" style="display:inline;" class="delete-form" onsubmit="return confirmDelete()">
                                 <input type="hidden" name="person_id" value="{{ person.person_id }}">
+                                <input type="hidden" name="action" value="delete">
                                 <button type="submit" name="action" value="delete" class="btn btn-danger btn-sm delete-button">Delete</button>
                             </form>
                             <a href="/details?id={{ person.person_id }}" class="btn btn-info btn-sm">Details</a>
@@ -527,28 +457,41 @@ def open_person_folder():
     return redirect('/person')
 
 @app.route('/edit_person', methods=['GET', 'POST'])
-@login_required
 def edit_person():
-    data = read_person_csv(person_file_path)
+    person_id = request.args.get('id')
+    person_data = read_excel(person_file_path)
+    person = next((p for p in person_data if p['person_id'] == person_id), None)
+
     if request.method == 'POST':
-        person_id = request.form['person_id']
-        if person_id:
-            for person in data:
-                if person['person_id'] == person_id:
-                    person['person_name'] = request.form['person_name']
-                    break
+        new_id = request.form['person_id']
+        new_name = request.form['person_name']
+        existing_person = next((p for p in person_data if p['person_id'] == new_id), None)
+
+        if existing_person and new_id != person_id:
+            return render_template_string('''
+                <p>ID Person sudah ada, milik {{ existing_person.person_name }}. Silakan masukkan ID lain.</p>
+                <a href="/edit_person?id={{ person_id }}">Kembali ke Edit Person</a>
+            ''', existing_person=existing_person, person_id=person_id)
+
+        # Update person data
+        if person:
+            person['person_id'] = new_id
+            person['person_name'] = new_name
         else:
-            new_person = {
-                'person_id': str(get_next_item_id(data, 'person_id')),
-                'person_name': request.form['person_name'],
-                'visit_time': '0',
-                'purchased_item': '0',
-                'money_spent': '0'
-            }
-            data.append(new_person)
-        write_person_csv(data, person_file_path)
+            person_data.append({'person_id': new_id, 'person_name': new_name})
+
+        # Update sales data if person_id changed
+        if person_id != new_id:
+            sales_data = read_excel(sales_file_path)
+            for sale in sales_data:
+                if sale['person_id'] == person_id:
+                    sale['person_id'] = new_id
+            write_excel(sales_data, sales_file_path)
+
+        write_excel(person_data, person_file_path)
         return redirect('/person')
 
+    data = read_excel(person_file_path)
     person_id = request.args.get('id')
     person = next((person for person in data if person['person_id'] == person_id), None)
     return render_template_string(r'''
@@ -578,6 +521,10 @@ def edit_person():
             <h1 class="text-center">Edit Person</h1>
             <form method="POST">
                 <div class="form-group">
+                    <label for="person_id">Person ID:</label>
+                    <input type="text" class="form-control" id="person_id" name="person_id" value="{{ person.person_id if person else '' }}" required>
+                </div>
+                <div class="form-group">
                     <label for="person_name">Person Name:</label>
                     <input type="text" class="form-control" id="person_name" name="person_name" value="{{ person.person_name if person else '' }}" required>
                 </div>
@@ -594,15 +541,14 @@ def edit_person():
                 navigator.sendBeacon('/shutdown');
             });
         </script>
-    ''', person=person)
+    ''', person=person, person_id=person_id)
 
 @app.route('/details', methods=['GET'])
-@login_required
 def details():
     person_id = request.args.get('id')
-    person_data = read_person_csv(person_file_path)
-    sales_data = read_sales_csv(sales_file_path)
-    stock_data = read_csv(file_path)
+    person_data = read_excel(person_file_path)
+    sales_data = read_excel(sales_file_path)
+    stock_data = read_excel(file_path)
 
     person = next((p for p in person_data if p['person_id'] == person_id), None)
     person_sales = [sale for sale in sales_data if sale['person_id'] == person_id]
@@ -706,6 +652,98 @@ def details():
             });
         </script>
     ''', person_sales=person_sales)
+    
+@app.route('/rake_up', methods=['GET', 'POST'])
+def rake_up():
+    sales_data = read_excel(sales_file_path)
+    items_data = read_excel(file_path)  # Baca data dari item.xlsx
+    sold_items = {item['item_id']: {'item_name': item['item_name'], 'total_sold': 0} for item in items_data}  # Inisialisasi dictionary untuk menyimpan jumlah terjual
+
+    if request.method == 'POST':
+        start_date = request.form['start_date']
+        end_date = request.form['end_date']
+        
+        # Hitung jumlah terjual berdasarkan rentang tanggal
+        for sale in sales_data:
+            purchase_date = datetime.strptime(sale['purchase_date'], '%d/%m/%Y-%H:%M:%S')
+            if start_date <= purchase_date.strftime('%Y-%m-%d') <= end_date:
+                item_id = sale['item_id']
+                if item_id in sold_items:
+                    sold_items[item_id]['total_sold'] += sale['item_quantity']
+
+    # Filter dan siapkan data untuk ditampilkan
+    filtered_sold_items = {item_id: data for item_id, data in sold_items.items() if data['total_sold'] > 0}
+
+    return render_template_string(r'''
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="/">Market App</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/stock">Stock</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/person">Person</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/rake_up">Rake Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/sales">Sale</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="btn btn-danger btn-sm delete-button" href="/exit" onclick="return confirm('Are you sure you want to exit?');">Exit</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container mt-5">
+            <h1 class="text-center">Sales Rake Up</h1>
+            <form method="POST" class="mb-4">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="start_date">Since:</label>
+                        <input type="date" class="form-control" id="start_date" name="start_date" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="end_date">Until:</label>
+                        <input type="date" class="form-control" id="end_date" name="end_date" required>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Tampilkan</button>
+            </form>
+            <table class="table table-bordered table-striped">
+                <thead class="thead-light">
+                    <tr>
+                        <th>Sale ID</th>
+                        <th>Buyer</th>
+                        <th>Item Name</th>
+                        <th>Item Quantity</th>
+                        <th>Item Total Price</th>
+                        <th>Purchase Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for sale in filtered_sales %}
+                    <tr>
+                        <td>{{ sale.sale_id }}</td>
+                        <td>{{ sale.person_name }}</td>
+                        <td>{{ sale.item_name }}</td>
+                        <td>{{ sale.item_quantity }}</td>
+                        <td>{{ sale.item_total_price }}</td>
+                        <td>{{ sale.purchase_date }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    ''', filtered_sales=filtered_sold_items)
 
 @app.route('/sales', methods=['GET', 'POST'])
 def sales():
@@ -717,9 +755,9 @@ def sales():
         if not cart_items:
             return jsonify({'success': False, 'message': 'No items in cart.'})
 
-        sales_data = read_sales_csv(sales_file_path)
-        person_data = read_person_csv(person_file_path)
-        stock_data = read_csv(file_path)
+        sales_data = read_excel(sales_file_path)
+        person_data = read_excel(person_file_path)
+        stock_data = read_excel(file_path)
 
         person = next((p for p in person_data if p['person_id'] == person_id), None)
 
@@ -759,14 +797,14 @@ def sales():
             person['purchased_item'] = str(int(person['purchased_item']) + total_quantity)
             person['money_spent'] = str(float(person['money_spent']) + total_price)
 
-            write_sales_csv(sales_data, sales_file_path)
-            write_person_csv(person_data, person_file_path)
-            write_csv(stock_data, file_path)
+            write_excel(sales_data, sales_file_path)
+            write_excel(person_data, person_file_path)
+            write_excel(stock_data, file_path)
 
             return jsonify({'success': True})
 
-    data = read_csv(file_path)
-    person_data = read_person_csv(person_file_path)
+    data = read_excel(file_path)
+    person_data = read_excel(person_file_path)
     return render_template_string(r'''
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
@@ -1191,13 +1229,5 @@ if __name__ == '__main__':
     flask_thread = threading.Thread(target=run_flask)
     flask_thread.start()
 
-  #  def on_closed():
-   #     try:
-    #        requests.post('http://127.0.0.1:5000/shutdown')
-      #  except requests.exceptions.RequestException:
-     #       pass
-       # finally:
-        #    os._exit(0)
-
-    webview.create_window("Market App", "http://127.0.0.1:5000/")
+    webview.create_window("Market App", "http://127.0.0.1:5000/", fullscreen=False)
     webview.start()
