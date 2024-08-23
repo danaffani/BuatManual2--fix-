@@ -478,7 +478,14 @@ def edit_person():
             person['person_id'] = new_id
             person['person_name'] = new_name
         else:
-            person_data.append({'person_id': new_id, 'person_name': new_name})
+            new_person = {
+                'person_id': new_id,
+                'person_name': new_name,
+                'visit_time': 0,  # Initialize visit_time to 0
+                'purchased_item': 0,  # Initialize purchased_item to 0
+                'money_spent': 0.0  # Initialize money_spent to 0.0
+            }
+            person_data.append(new_person)
 
         # Update sales data if person_id changed
         if person_id != new_id:
